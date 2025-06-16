@@ -1,0 +1,107 @@
+{
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_101: '101'>), ('subregion', <SubregionEnum.EMEA: 'EMEA'>))": {
+        "subregion": "EMEA",
+        "store_id": "101",
+        "data": {
+            "revenue": 101000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_202: '202'>), ('subregion', <SubregionEnum.EMEA: 'EMEA'>))": {
+        "subregion": "EMEA",
+        "store_id": "202",
+        "data": {
+            "revenue": 202000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.ONLINE: 'ONLINE'>), ('subregion', <SubregionEnum.EMEA: 'EMEA'>))": {
+        "subregion": "EMEA",
+        "store_id": "ONLINE",
+        "data": {
+            "revenue": 20000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_101: '101'>), ('subregion', <SubregionEnum.APAC: 'APAC'>))": {
+        "subregion": "APAC",
+        "store_id": "101",
+        "data": {
+            "revenue": 101000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_202: '202'>), ('subregion', <SubregionEnum.APAC: 'APAC'>))": {
+        "subregion": "APAC",
+        "store_id": "202",
+        "data": {
+            "revenue": 202000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.ONLINE: 'ONLINE'>), ('subregion', <SubregionEnum.APAC: 'APAC'>))": {
+        "subregion": "APAC",
+        "store_id": "ONLINE",
+        "data": {
+            "revenue": 20000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_101: '101'>), ('subregion', <SubregionEnum.AMER: 'AMER'>))": {
+        "subregion": "AMER",
+        "store_id": "101",
+        "data": {
+            "revenue": 101000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_202: '202'>), ('subregion', <SubregionEnum.AMER: 'AMER'>))": {
+        "subregion": "AMER",
+        "store_id": "202",
+        "data": {
+            "revenue": 202000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.ONLINE: 'ONLINE'>), ('subregion', <SubregionEnum.AMER: 'AMER'>))": {
+        "subregion": "AMER",
+        "store_id": "ONLINE",
+        "data": {
+            "revenue": 20000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_303: '303'>), ('subregion', <SubregionEnum.EMEA: 'EMEA'>))": {
+        "subregion": "EMEA",
+        "store_id": "303",
+        "data": {
+            "revenue": 303000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_404: '404'>), ('subregion', <SubregionEnum.EMEA: 'EMEA'>))": {
+        "subregion": "EMEA",
+        "store_id": "404",
+        "data": {
+            "revenue": 404000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_303: '303'>), ('subregion', <SubregionEnum.APAC: 'APAC'>))": {
+        "subregion": "APAC",
+        "store_id": "303",
+        "data": {
+            "revenue": 303000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_404: '404'>), ('subregion', <SubregionEnum.APAC: 'APAC'>))": {
+        "subregion": "APAC",
+        "store_id": "404",
+        "data": {
+            "revenue": 404000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_303: '303'>), ('subregion', <SubregionEnum.AMER: 'AMER'>))": {
+        "subregion": "AMER",
+        "store_id": "303",
+        "data": {
+            "revenue": 303000
+        }
+    },
+    "get_sales_report::(('store_id', <StoreIDEnum.STORE_404: '404'>), ('subregion', <SubregionEnum.AMER: 'AMER'>))": {
+        "subregion": "AMER",
+        "store_id": "404",
+        "data": {
+            "revenue": 404000
+        }
+    }
+}
