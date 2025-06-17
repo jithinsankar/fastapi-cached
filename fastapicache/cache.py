@@ -1,6 +1,5 @@
 # fastapicache/cache.py
 import json
-import asyncio
 import itertools
 from functools import wraps
 from pathlib import Path
