@@ -1,4 +1,4 @@
-# fastapi-cacher/inspector.py
+# fastapicachex/inspector.py
 import inspect
 import enum
 from typing import Literal, get_origin, get_args

@@ -6,11 +6,11 @@ from enum import Enum
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from fastapi-cacher import fastapi-cacher # Assuming fastapi-cacher is installed or in PYTHONPATH
+from fastapicachex import FastAPICachex # Assuming fastapicachex is installed or in PYTHONPATH
 
 # 1. Initialize the cache manager first
 # Give the cache file a descriptive name
-cache = fastapi-cacher(cache_file_path="sales_report_cache.json")
+cache = FastAPICachex(cache_file_path="sales_report_cache.json")
 
 # 2. Define the lifespan context manager for the application
 @asynccontextmanager

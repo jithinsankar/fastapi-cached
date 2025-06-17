@@ -1,4 +1,4 @@
-# fastapi-cacher/cache.py
+# fastapicachex/cache.py
 import json
 import itertools
 from functools import wraps
@@ -7,7 +7,7 @@ from typing import Callable, Any
 
 from .inspector import get_discrete_params
 
-class fastapi-cacher:
+class FastAPICachex:
     """
     A class to provide pre-computation and caching for FastAPI endpoints
     with discrete parameters (Enum, Literal).
@@ -75,7 +75,7 @@ class fastapi-cacher:
         """
         The main pre-computation logic. Should be called on application startup.
         """
-        print("--- Starting fastapi-cacher Pre-computation ---")
+        print("--- Starting fastapicachex Pre-computation ---")
         self._load_from_file()
 
         total_new_computations = 0
@@ -114,7 +114,7 @@ class fastapi-cacher:
                 except Exception as e:
                     print(f"ERROR computing for {kwargs}: {e}")
 
-        print("\n--- fastapi-cacher Pre-computation Finished ---")
+        print("\n--- fastapicachex Pre-computation Finished ---")
         if total_new_computations > 0:
             print(f"Completed {total_new_computations} new computations and saved to '{self.cache_file}'.")
         else:

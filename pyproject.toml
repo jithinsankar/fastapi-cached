@@ -1,6 +1,6 @@
 # pyproject.toml
 [tool.poetry]
-name = "fastapi-cacher"
+name = "fastapicachex"
 version = "0.1.0"
 description = "A simple package to pre-compute and cache FastAPI endpoints with discrete parameters."
 authors = ["Jithin Sankar"]

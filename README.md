@@ -1,4 +1,4 @@
-# fastapi-cacher
+# fastapicachex
 
 A simple Python package to pre-compute and cache FastAPI endpoints that have parameters with discrete values (like Enums or Literals). This is ideal for slow, data-intensive endpoints where the inputs are predictable and the data does not change frequently.
 
@@ -13,23 +13,23 @@ A simple Python package to pre-compute and cache FastAPI endpoints that have par
 
 ## Installation
 
-(Assuming you place the `fastapi-cacher` folder in your project root)
+(Assuming you place the `fastapicachex` folder in your project root)
 
 You can install it locally for your project. If you are using Poetry:
 
 ```bash
-poetry add fastapi-cacher
+poetry add fastapicachex
 ```
 
 Or with pip:
 
 ```bash
-pip install fastapi-cacher
+pip install fastapicachex
 ```
 
 ## How to Use
 
-Here is a complete example of how to integrate `fastapi-cacher` into your FastAPI application using the modern `lifespan` event handler.
+Here is a complete example of how to integrate `fastapicachex` into your FastAPI application using the modern `lifespan` event handler.
 
 ```python
 # main.py
@@ -37,10 +37,10 @@ import asyncio
 from contextlib import asynccontextmanager
 from enum import Enum
 from fastapi import FastAPI
-from fastapi-cacher import fastapi-cacher
+from fastapicachex import fastapicachex
 
-# 1. Initialize fastapi-cacher
-cache = fastapi-cacher(cache_file_path="sales_report_cache.json")
+# 1. Initialize fastapicachex
+cache = fastapicachex(cache_file_path="sales_report_cache.json")
 
 # 2. Define the lifespan manager to run pre-computation on startup
 @asynccontextmanager
@@ -90,7 +90,7 @@ async def get_sales_report(subregion: SubregionEnum, store_id: StoreIDEnum):
 
 ### How It Works
 
-1.  **Initialization:** `cache = fastapi-cacher(...)` creates a cache manager instance.
+1.  **Initialization:** `cache = fastapicachex(...)` creates a cache manager instance.
 2.  **Lifespan Manager:** The `lifespan` function is defined using `@asynccontextmanager`. The code before the `yield` statement is designated as startup logic.
 3.  **Startup:** When initializing FastAPI via `app = FastAPI(lifespan=lifespan)`, FastAPI knows to execute the startup portion of the `lifespan` manager. This triggers `cache.run_precomputation()`.
     - The cache loads any existing data from `sales_report_cache.json`.
@@ -116,12 +116,12 @@ Use the example code from the `README.md` and save it in this file.
 from enum import Enum
 from fastapi import FastAPI
 import asyncio
-from fastapi-cacher import fastapi-cacher # Assuming fastapi-cacher is installed or in PYTHONPATH
+from fastapicachex import fastapicachex # Assuming fastapicachex is installed or in PYTHONPATH
 
-# 1. Initialize FastAPI and fastapi-cacher
+# 1. Initialize FastAPI and fastapicachex
 app = FastAPI()
 # Give the cache file a descriptive name
-cache = fastapi-cacher(cache_file_path="sales_report_cache.json")
+cache = fastapicachex(cache_file_path="sales_report_cache.json")
 
 # --- Define your types ---
 class SubregionEnum(str, Enum):
@@ -176,7 +176,7 @@ async def on_startup():
 
 #### Running the Server
 
-From your terminal in the `fastapi-cacher-project` directory:
+From your terminal in the `fastapicachex-project` directory:
 
 ```bash
 # First, ensure dependencies are installed (FastAPI and Uvicorn)
