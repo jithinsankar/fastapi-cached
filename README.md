@@ -13,15 +13,8 @@ A simple Python package to pre-compute and cache FastAPI endpoints that have par
 
 ## Installation
 
-(Assuming you place the `fastapi-cached` folder in your project root)
 
-You can install it locally for your project. If you are using Poetry:
-
-```bash
-poetry add fastapi-cached
-```
-
-Or with pip:
+You can install it with pip:
 
 ```bash
 pip install fastapi-cached
